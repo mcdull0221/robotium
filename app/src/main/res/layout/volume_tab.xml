@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.nurotron.ble_ui.UniversTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/action_home"
+        android:id="@+id/home_text"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textSize="26dp"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp">
+        <com.nurotron.ble_ui.UniversTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volume:"
+            android:textSize="18sp"
+            android:id="@+id/vp"/>
+        <Space android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/space"/>
+        <com.nurotron.ble_ui.UniversTextView
+            android:id="@+id/volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:weightSum="7">
+
+        <ImageView
+            android:id="@+id/volume_min"
+            android:layout_width="20dp"
+            android:layout_height="45dp"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/volume_over_glow" />
+        <ProgressBar
+            android:id="@+id/volume_bar"
+            android:layout_height="45dp"
+            android:layout_width="match_parent"
+            style="@style/CustomProgressBar"
+            android:max="11"
+            android:progress="0"
+            android:progressDrawable="@drawable/custom_progressbar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <com.nurotron.ble_ui.UniversTextView
+            android:id="@+id/vol"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blank"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+        <ImageView
+            android:id="@+id/volume_max"
+            android:layout_width="20dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/volume_under_glow" />
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:max="11"
+            android:id="@+id/volume_adj"
+            android:layout_weight="6"
+            android:visibility="gone"
+            />
+
+        <ImageButton
+            android:id="@+id/mute"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/volume_dn" />
+
+        <ImageButton
+            android:id="@+id/add_vol"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/volume_up" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/search_bar_layout">
+        <Button
+            android:id="@+id/left_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:text="Turn off bluetooth"
+            android:layout_margin="0dp"
+            android:textColor="@android:color/background_light"
+            android:background="@drawable/tab_border"
+            />
+        <Button
+            android:id="@+id/right_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:text="Turn On Bluetooth"
+            android:layout_margin="0dp"
+            android:textColor="@color/header"
+            android:background="@drawable/tab_border_inactive"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:weightSum="2">
+            <ToggleButton
+                android:id="@+id/program1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="0dp"
+                android:text="@string/p1"
+                android:textOff="@string/p1"
+                android:textOn="@string/p1_selected"
+                android:textColor="#ffffff"
+                android:checked="false"
+                android:layout_weight="1"
+                android:background="@drawable/check"/>
+
+            <ToggleButton
+                android:id="@+id/program2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="0dp"
+                android:text="@string/p2"
+                android:textOff="@string/p2"
+                android:textOn="@string/p2_selected"
+                android:checked="false"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:background="@drawable/check_right"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:weightSum="2"
+            >
+            <ToggleButton
+                android:id="@+id/program3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:text="@string/p3"
+                android:textOff="@string/p3"
+                android:textOn="@string/p3_selected"
+                android:checked="false"
+                android:textColor="#ffffff"
+                android:background="@drawable/check"/>
+
+            <ToggleButton
+                android:id="@+id/program4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:text="@string/p4"
+                android:textOff="@string/p4"
+                android:textOn="@string/p4_selected"
+                android:checked="false"
+                android:textColor="#ffffff"
+                android:background="@drawable/check_right"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.nurotron.ble_ui.UniversTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:id="@+id/pgm_byte"
+
+        />
+
+    <com.nurotron.ble_ui.UniversTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vol_byte"
+        />
+
+</LinearLayout>

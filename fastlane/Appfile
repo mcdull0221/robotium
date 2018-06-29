@@ -1,0 +1,2 @@
+json_key_file "Nurotron-0ded74ab7fa1.json" # Path to the json secret file - Follow https://github.com/fastlane/supply#setup to get one
+package_name "com.nurotron.ble_ui" # e.g. com.krausefx.app

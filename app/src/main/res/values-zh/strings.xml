@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">Enduro</string>
+    <string name="action_home">主菜单</string>
+    <string name="action_settings">设置</string>
+    <string name="action_status">状态</string>
+    <string name="action_finder">定位</string>
+    <string name="action_user_log">用户日志</string>
+    <string name="action_about">关于</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="ble_not_supported">蓝牙不支持</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">设备地址:</string>
+    <string name="label_state">状态:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">已连接</string>
+    <string name="disconnected">未连接</string>
+    <string name="title_devices">设备扫描中...</string>
+    <string name="error_bluetooth_not_supported">蓝牙不支持</string>
+    <string name="search">设备查找中...</string>
+    <string name="refresh">下拉重新扫描</string>
+    <string name="double_press">再按一次退出程序</string>
+    <string name="pair_to_device">确定连接设备: </string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="detect_status">正在获取当前设备信息...</string>
+
+
+    <string name="location_request">安卓需要获取位置信息查找附近蓝牙BLE设备。</string>
+    <string name="wait">正在连接...</string>
+    <string name="retry">请前往设置->连接设备重新选择设备。</string>
+    <string name="device_connected">设备已连接！</string>
+
+    <string name="low_battery">低电量</string>
+    <string name="charge">电池电量低，请充电</string>
+
+    <string name="service_not_found">无法获取服务，请检查连接状态</string>
+    <string name="operation_failed">操作失败，请检查设备状态</string>
+    <string name="status_failed">无法获取当前设备状态。</string>
+
+    <string name="alert">通知</string>
+    <string name="implant_alert">植入体异常，请检查。</string>
+    <string name="abnormal">异常</string>
+    <string name="implant_connected">植入体已连接！</string>
+
+
+    <string name="last_location">找不到连接设备，是否获取上次位置信息？</string>
+    <string name="location_service">位置信息已关闭</string>
+    <string name="gps_enable">是否允许获取当前位置信息？</string>
+
+    <string name="further">远离</string>
+    <string name="closer">接近</string>
+
+
+    <string name="unknown_device">未知设备</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+    <string name="blank"> </string>
+
+
+    <string name="open">打开</string>
+
+    <string name="bluetooth_pair">若希望使用Enduro拨打电话，请前往蓝牙设置界面进行配对并保存此设备。</string>
+    <string name="goto_bluetooth">前往配对</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">设备无法连接</string>
+    <string name="menu_disconnect">重新连接</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+
+
+    <!--slide table-->
+    <string name="tab_program">Program</string>
+    <string name="tab_volume">Volume</string>
+    <string name="tab_input">Input</string>
+    <string name="tab_mode">Mode</string>
+    <string name="tab_ctone">C-Tone</string>
+    <string name="battery_frame">battery_frame</string>
+
+    <!-- spinner arrays-->
+    <string-array name="input_array">
+        <item>MIC</item>
+        <item>AUX</item>
+        <item>T-Coil</item>
+        <item>MIC + AUX</item>
+        <item>MIC + T-Coil</item>
+    </string-array>
+
+    <!-- setting tab -->
+    <string name="language">语言</string>
+    <string name="text_sizes">字体大小</string>
+    <string name="connect_device">设备连接</string>
+    <string name="night_mode">夜间模式</string>
+    <string name="troubleshoot">故障排除</string>
+    <string name="english">英语</string>
+    <string name="chinese">中文</string>
+    <string name="spanish">西班牙语</string>
+    <string name="small">小</string>
+    <string name="medium">中</string>
+    <string name="large">大</string>
+    <string name="back_settings">设置</string>
+
+    <!-- program -->
+    <string name="p1">程序一</string>
+    <string name="p1_selected">程序一已选</string>
+    <string name="p2">程序二</string>
+    <string name="p2_selected">程序二已选</string>
+    <string name="p3">程序三</string>
+    <string name="p3_selected">程序三已选</string>
+    <string name="p4">程序四</string>
+    <string name="p4_selected">程序四已选</string>
+    <string name="selected">已选</string>
+    <!-- pre-processor -->
+    <string name="preprocessor">参数设置</string>
+    <string name="custom">自定义程序名称:</string>
+    <string name="mode">模式:</string>
+    <string name="rich">丰富</string>
+    <string name="normal">日常</string>
+    <string name="input">输入:</string>
+    <string name="mic">麦克风/外接</string>
+    <string name="ma">麦克风+外接</string>
+    <string name="aux">音频</string>
+    <string name="mt">麦克风+磁感</string>
+    <string name="tcoil">蓝牙</string>
+    <string name="ctone">易懂策略:</string>
+    <string name="enable">使用</string>
+    <string name="disable">关闭</string>
+    <string name="noise">高级降噪:</string>
+    <string name="input_ratio">输入比:</string>
+    <string name="r12">1:2</string>
+    <string name="r13">1:3</string>
+    <string name="r15">1:5</string>
+    <string name="r19">1:9</string>
+
+    <!-- status -->
+    <string name="status_title">状态</string>
+    <string name="device_status">耳背机状态:</string>
+    <string name="implant_status">植入体状态:</string>
+    <string name="program">程序设置:</string>
+    <string name="volume">音量:</string>
+    <string name="volume_text"> / 12</string>
+    <string name="audio">音乐/电话:</string>
+
+
+    <!-- connect device -->
+    <string name="connect">设备连接</string>
+    <string name="connect_guide">最多可以连接两个设备。</string>
+    <string name="found">已找到设备:</string>
+    <string name="scan_again">再次扫描</string>
+    <string name="disconnect">断开连接</string>
+    <string name="saved_device">上次连接设备：</string>
+
+    <!-- user log -->
+    <string name="device_number">设备编号:</string>
+    <string name="last_fitting">上次校正日期:</string>
+    <string name="hours">小时</string>
+    <string name="total_usage">总共使用时间:</string>
+    <string name="share_message">是否允许诺尔康访问设备使用信息?</string>
+    <string name="allow">是</string>
+    <string name="optout">否</string>
+
+    <!-- error message -->
+    <string name="unable_volume">无法更改音量到音量 </string>
+    <string name="unable_program">无法更改程序到程序 </string>
+    <string name="unable_mode">模式更改失败</string>
+    <string name="unable_ctone">C-Tone设置失败</string>
+    <string name="unable_input">输入模式更改失败</string>
+    <string name="unable_noise">降噪设置失败</string>
+    <string name="notification_alert">无法获取设备状态，请检查</string>
+</resources>

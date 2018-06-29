@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/nu_action_bar"
+        layout="@layout/partial_actionbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <Button
+                android:id="@+id/backToSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_arrow"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                />
+            <com.nurotron.ble_ui.UniversTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back_settings"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45dp"
+                />
+
+            <com.nurotron.ble_ui.UniversTextView
+                android:id="@+id/connect_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="@string/connect"
+                android:textSize="26sp" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/secondary_bg"
+        android:padding="20dip"
+        android:weightSum="1">
+
+        <com.nurotron.ble_ui.UniversTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/connect_guide"
+            android:id="@+id/guide_text"
+            android:textSize="25sp"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <com.nurotron.ble_ui.UniversTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/saved_device"
+                android:id="@+id/save_text"
+                android:textSize="25sp"
+
+                />
+        </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/saved_device_view"
+            >
+
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <com.nurotron.ble_ui.UniversTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/found"
+                android:id="@+id/found_text"
+                android:textSize="25sp"
+
+                />
+
+            <com.nurotron.ble_ui.UniversTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Choose side:"
+                android:textAlignment="textEnd"
+                android:textSize="25dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/device_list_view"
+            android:layout_weight="1"
+            >
+
+
+        </ListView>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+
+            android:text="@string/scan_again"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:background="@drawable/button"
+            android:id="@+id/scan"
+            android:layout_marginTop="15dp"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:text="@string/disconnect"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:background="@drawable/button"
+            android:id="@+id/disconnect"
+            android:layout_marginTop="15dp"
+            android:visibility="invisible"
+            />
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

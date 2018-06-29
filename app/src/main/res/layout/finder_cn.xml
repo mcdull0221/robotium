@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/nu_action_bar"
+        layout="@layout/partial_actionbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            class="com.amap.api.maps.MapFragment"
+            android:id="@+id/amap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/secondary_bg"
+            android:orientation="vertical"
+            android:padding="20dip" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp">
+
+            <ProgressBar
+                android:id="@+id/locate_progress"
+                style="@style/CustomProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+
+            <com.nurotron.ble_ui.UniversTextView
+                android:id="@+id/further"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="10dp"
+                android:text="@string/further"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+            <com.nurotron.ble_ui.UniversTextView
+                android:id="@+id/closer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="10dp"
+                android:text="@string/closer"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <Button
+                android:id="@+id/backtohome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_arrow"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                />
+            <com.nurotron.ble_ui.UniversTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOME"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45dp"
+                />
+
+            <com.nurotron.ble_ui.UniversTextView
+                android:id="@+id/universTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="FINDER"
+                android:textSize="26dp" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

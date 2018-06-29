@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nu_action_bar"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/action_toolbar_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="Action_Button"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/menu" />
+
+    <ImageView
+        android:id="@+id/nu_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:background="@drawable/logo"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/action_toolbar_battery"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:contentDescription="Action_Button"
+        android:padding="0dp"
+        android:src="@drawable/battery_10" />
+    <com.nurotron.ble_ui.UniversTextView
+        android:id="@+id/action_toolbar_battery_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:text="20%"/>
+
+</RelativeLayout>

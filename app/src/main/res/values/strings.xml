@@ -1,0 +1,173 @@
+<resources>
+    <string name="app_name">Enduro</string>
+    <string name="action_home">Home</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_status">Status</string>
+    <string name="action_finder">Finder</string>
+    <string name="action_user_log">User Log</string>
+    <string name="action_about">About</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">Device Scanning...</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="search">Searching...</string>
+    <string name="refresh">Pull to Rescan</string>
+    <string name="double_press">Please click BACK again to exit.</string>
+    <string name="pair_to_device">Pair to device: </string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="location_request">Android required to enable location service to find the nearby BLE devices.</string>
+    <string name="wait">Connecting, please wait...</string>
+    <string name="retry">Please go to settings -> connect device to connect.</string>
+    <string name="device_connected">Device Connected!</string>
+    <string name="detect_status">Getting current device info...</string>
+
+    <string name="low_battery">Low Battery</string>
+    <string name="charge">Battery Low, please charge.</string>
+
+    <string name="service_not_found">Service not found. Please check connection.</string>
+    <string name="operation_failed">Operation failed. Please check device.</string>
+    <string name="status_failed">Unable to retrieve current status from device.</string>
+
+
+
+    <string name="alert">Alert</string>
+    <string name="implant_alert">Implant status abnormal, please check.</string>
+    <string name="abnormal">Anormal</string>
+    <string name="implant_connected">Implant connected!</string>
+
+
+    <string name="last_location">Cannot connect to the device. Do you want to use last location?</string>
+    <string name="location_service">Location Services Not Active</string>
+    <string name="gps_enable">Allow location service and GPS?</string>
+
+    <string name="further">Further</string>
+    <string name="closer">Closer</string>
+
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+    <string name="blank"> </string>
+
+    <string name="open">Enable</string>
+
+    <string name="bluetooth_pair">In order to use the audio function of Enduro, please pair and save the bluetooth in settings.</string>
+    <string name="goto_bluetooth">Go to settings.</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Lost connection</string>
+    <string name="menu_disconnect">Reconnected</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+
+
+    <!--slide table-->
+    <string name="tab_program">Program</string>
+    <string name="tab_volume">Volume</string>
+    <string name="tab_input">Input</string>
+    <string name="tab_mode">Mode</string>
+    <string name="tab_ctone">C-Tone</string>
+    <string name="battery_frame">battery_frame</string>
+
+    <!-- spinner arrays-->
+    <string-array name="input_array">
+        <item>MIC</item>
+        <item>AUX</item>
+        <item>T-Coil</item>
+        <item>MIC + AUX</item>
+        <item>MIC + T-Coil</item>
+    </string-array>
+
+    <!-- setting tab -->
+    <string name="language">Language</string>
+    <string name="text_sizes">Text Sizes</string>
+    <string name="connect_device">Connect Device</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="troubleshoot">Troubleshoot</string>
+    <string name="english">English</string>
+    <string name="chinese">Chinese</string>
+    <string name="spanish">Spanish</string>
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="large">Large</string>
+    <string name="back_settings">Settings</string>
+
+    <!-- program -->
+    <string name="p1">Program 1</string>
+    <string name="p1_selected">Prog 1 selected</string>
+    <string name="p2">Program 2</string>
+    <string name="p2_selected">Prog 2 selected</string>
+    <string name="p3">Program 3</string>
+    <string name="p3_selected">Prog 3 selected</string>
+    <string name="p4">Program 4</string>
+    <string name="p4_selected">Prog 4 selected</string>
+    <string name="selected">selected</string>
+
+
+    <!-- pre-processor -->
+    <string name="preprocessor">Pre-processor</string>
+    <string name="custom">Customize:</string>
+    <string name="mode">Mode:</string>
+    <string name="rich">Rich</string>
+    <string name="normal">Normal</string>
+    <string name="input">Input Source:</string>
+    <string name="mic">Mic/AUX</string>
+    <string name="ma">Mic + AUX</string>
+    <string name="aux">AUX</string>
+    <string name="mt">Mic + T-Coil</string>
+    <string name="tcoil">Bluetooth</string>
+    <string name="ctone">C-Tone:</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="noise">Noise Reduction:</string>
+    <string name="input_ratio">Input Ratio:</string>
+    <string name="r12">1:2</string>
+    <string name="r13">1:3</string>
+    <string name="r15">1:5</string>
+    <string name="r19">1:9</string>
+
+    <!-- status -->
+    <string name="status_title">Status</string>
+    <string name="device_status">Device:</string>
+    <string name="implant_status">Implant:</string>
+    <string name="program">Program:</string>
+    <string name="volume">Volume:</string>
+    <string name="volume_text"> of 12</string>
+    <string name="audio">Audio:</string>
+
+    <!-- connect device -->
+    <string name="connect">Connect</string>
+    <string name="connect_guide">You can connect up to 2 devices.</string>
+    <string name="found">Device found:</string>
+    <string name="scan_again">Scan Again</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="saved_device">Last Connected Device: </string>
+
+
+    <!-- user log -->
+    <string name="device_number">Device number:</string>
+    <string name="last_fitting">Last fitting date:</string>
+    <string name="hours">hours</string>
+    <string name="total_usage">Total Usage:</string>
+    <string name="share_message">Share device usage with Nurotron?</string>
+    <string name="allow">Allow</string>
+    <string name="optout">opt-out</string>
+
+    <!-- error message -->
+    <string name="unable_volume">Unable to change volume to </string>
+    <string name="unable_program">Unable to change program to </string>
+    <string name="unable_mode">Unable to change mode</string>
+    <string name="unable_ctone">Unable to change ctone settings</string>
+    <string name="unable_input">Unable to change input source</string>
+    <string name="unable_noise">Unable to change noise reduction settings</string>
+    <string name="notification_alert">Unable to get status from the device, please check.</string>
+</resources>

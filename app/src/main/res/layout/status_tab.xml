@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+    <include
+        android:id="@+id/nu_action_bar"
+        layout="@layout/partial_actionbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <Button
+                android:id="@+id/backtohome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                />
+
+
+            <ImageView
+                android:id="@+id/left_arrow_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_arrow"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                />
+            <com.nurotron.ble_ui.UniversTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_home"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45dp"
+                />
+
+            <com.nurotron.ble_ui.UniversTextView
+                android:id="@+id/status_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="@string/status_title"
+                android:textAllCaps="true"
+                android:textSize="26sp" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/secondary_bg"
+        android:padding="20dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02"
+            android:orientation="horizontal">
+
+            <com.nurotron.ble_ui.UniversTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/device_status"
+                android:id="@+id/device_text"
+                android:textSize="25sp"
+
+                />
+
+            <com.nurotron.ble_ui.UniversTextView
+                android:id="@+id/device_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Demo"
+                android:textAlignment="textEnd"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.02">
+            <com.nurotron.ble_ui.UniversTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="@string/implant_status"
+                android:id="@+id/implant_text"
+                android:layout_weight="0.5"
+
+                />
+            <com.nurotron.ble_ui.UniversTextView
+                android:id="@+id/implant_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="@string/connected"
+                android:layout_weight="0.5"
+                android:textAlignment="textEnd"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.02">
+            <com.nurotron.ble_ui.UniversTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="@string/program"
+                android:id="@+id/program_text"
+                android:layout_weight="0.5"
+
+                />
+            <com.nurotron.ble_ui.UniversTextView
+                android:id="@+id/program_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="N/A"
+                android:layout_weight="0.5"
+                android:textAlignment="textEnd"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.02">
+            <com.nurotron.ble_ui.UniversTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="@string/volume"
+                android:id="@+id/volume_text"
+                android:layout_weight="0.5"
+
+                />
+            <com.nurotron.ble_ui.UniversTextView
+                android:id="@+id/volume_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="N/A"
+                android:layout_weight="0.5"
+                android:textAlignment="textEnd"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.25">
+            <com.nurotron.ble_ui.UniversTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="@string/audio"
+                android:id="@+id/audio_text"
+                android:layout_weight="0.5"
+
+                />
+
+            <Switch
+                android:id="@+id/audio_status"
+                style="@style/CustomSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:textOff="OFF"
+                android:textOn="ON"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

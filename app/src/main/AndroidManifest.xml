@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nurotron.ble_ui">
+
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/launcher_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDDvhW9g7gKVbwKo7o-6uZ8lp6MkZfNVpQ"/>
+
+        <activity android:name=".PhoneCallActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="tel" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nurotron.ble_ui.SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nurotron.ble_ui.DeviceScanActivity"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name="com.nurotron.ble_ui.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.nurotron.ble_ui.SettingsActivity"
+            android:parentActivityName="com.nurotron.ble_ui.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".StatusActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FinderActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.nurotron.ble_ui.UsageActivity"
+            android:parentActivityName="com.nurotron.ble_ui.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ConnectDeviceActivity"
+            android:parentActivityName=".SettingsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AboutActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TextSizeActivity"
+            android:parentActivityName=".SettingsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LanguageActivity"
+            android:parentActivityName=".SettingsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NightModeActivity"
+            android:parentActivityName=".SettingsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CNFinderActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <service android:name="com.nurotron.ble_ui.BluetoothLeService" android:enabled="true"/>
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"
+            />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="f12607c4f9beb6102fda77ecf8b3c673"/>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="c7a254353ee46022eb18cd51c688838077d02c2b"
+            />
+    </application>
+
+</manifest>

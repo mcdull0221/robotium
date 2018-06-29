@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <!-- Action Bar (Aligned to Top)-->
+    <include
+        android:id="@+id/nu_action_bar"
+        layout="@layout/partial_actionbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp">
+        <com.nurotron.ble_ui.UniversTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:textSize="18sp"
+            android:text="@string/device_number"/>
+        <com.nurotron.ble_ui.UniversTextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:text="abcdefgh1234"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="2dp">
+        <com.nurotron.ble_ui.UniversTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:textSize="18sp"
+            android:text="@string/last_fitting"/>
+        <com.nurotron.ble_ui.UniversTextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:text="Jan 1, 2017"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="4dp">
+        <View
+            android:id="@+id/color1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#9ECAE8"
+            android:layout_alignParentLeft="true"/>
+        <com.nurotron.ble_ui.UniversTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/color1"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:textSize="18sp"
+            android:text="@string/p1"/>
+        <com.nurotron.ble_ui.UniversTextView
+            android:id="@+id/p1_text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:text="20 hours"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="4dp">
+        <View
+            android:id="@+id/color2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#4984BE"
+            android:layout_alignParentLeft="true"/>
+        <com.nurotron.ble_ui.UniversTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/color2"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:textSize="18sp"
+            android:text="@string/p2"/>
+        <com.nurotron.ble_ui.UniversTextView
+            android:id="@+id/p2_text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:text="16 hours"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="4dp">
+        <View
+            android:id="@+id/color3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#255DB7"
+            android:layout_alignParentLeft="true"/>
+        <com.nurotron.ble_ui.UniversTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/color3"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:textSize="18sp"
+            android:text="@string/p3"/>
+        <com.nurotron.ble_ui.UniversTextView
+            android:id="@+id/p3_text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:text="26 hours"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="4dp">
+        <View
+            android:id="@+id/color4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#1D4593"
+            android:layout_alignParentLeft="true"/>
+        <com.nurotron.ble_ui.UniversTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/color4"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:textSize="18sp"
+            android:text="@string/p4"/>
+        <com.nurotron.ble_ui.UniversTextView
+            android:id="@+id/p4_text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:text="10 hours"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="4dp">
+
+        <com.nurotron.ble_ui.UniversTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:text="@string/total_usage"/>
+        <com.nurotron.ble_ui.UniversTextView
+            android:id="@+id/total_hour"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="100 hours"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <ProgressBar
+            android:id="@+id/progress_bar_1"
+            android:layout_width="218dp"
+            android:layout_height="218dp"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/circular_gradient"
+            android:background="@drawable/circle_shape"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="360"
+            android:rotation="-90"
+            tools:visibility="visible"
+            android:progress="45" />
+        <ProgressBar
+            android:id="@+id/progress_bar_2"
+            android:layout_width="218dp"
+            android:layout_height="218dp"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/circular_gradient_2"
+            android:background="@drawable/circle_shape"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="360"
+            android:rotation="-45"
+            tools:visibility="visible"
+            android:progress="120" />
+        <ProgressBar
+            android:id="@+id/progress_bar_3"
+            android:layout_width="218dp"
+            android:layout_height="218dp"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/circular_gradient_3"
+            android:background="@drawable/circle_shape"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="360"
+            android:rotation="75"
+            tools:visibility="visible"
+            android:progress="105" />
+        <ProgressBar
+            android:id="@+id/progress_bar_4"
+            android:layout_width="218dp"
+            android:layout_height="218dp"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/circular_gradient_4"
+            android:background="@drawable/circle_shape"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="360"
+            android:rotation="180"
+            tools:visibility="visible"
+            android:progress="90" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <com.nurotron.ble_ui.UniversTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:text="@string/share_message"/>
+
+    </RelativeLayout>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_allow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_weight="1"
+            android:text="@string/allow"
+            style="@style/CustomRadioBtn"/>
+        <View
+            android:layout_width="40dp"
+            android:layout_height="match_parent"/>
+        <RadioButton
+            android:id="@+id/radio_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/optout"
+            style="@style/CustomRadioBtn"/>
+
+    </RadioGroup>
+
+</LinearLayout>
